@@ -16,6 +16,8 @@ public:
   double Kp;
   double Ki;
   double Kd;
+  
+  double prev_cte;
 
   /*
   * Constructor
@@ -32,7 +34,7 @@ public:
   */
   void Init(double Kp, double Ki, double Kd);
   
-  
+  double steer();
 
   /*
   * Update the PID error variables given cross track error.
