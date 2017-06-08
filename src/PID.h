@@ -34,6 +34,8 @@ public:
   */
   void Init(double Kp, double Ki, double Kd);
   
+  void set(double Kp, double Ki, double Kd);
+  
   double steer();
 
   /*

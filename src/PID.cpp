@@ -22,6 +22,12 @@ void PID::Init(double Kp, double Ki, double Kd) {
   this -> prev_cte = 0.;
 }
 
+void PID::set(double Kp, double Ki, double Kd) {
+  this -> Kp = Kp;
+  this -> Ki = Ki;
+  this -> Kd = Kd;
+}
+
 
 double PID::steer(){
   
