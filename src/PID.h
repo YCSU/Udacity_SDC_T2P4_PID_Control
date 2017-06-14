@@ -34,8 +34,14 @@ public:
   */
   void Init(double Kp, double Ki, double Kd);
   
+  /*
+   * Set PID 
+   */
   void set(double Kp, double Ki, double Kd);
   
+  /*
+   * Calculate steering angle from PID 
+   */
   double steer();
 
   /*
@@ -43,10 +49,7 @@ public:
   */
   void UpdateError(double cte);
 
-  /*
-  * Calculate the total PID error.
-  */
-  double TotalError();
+  
 };
 
 #endif /* PID_H */

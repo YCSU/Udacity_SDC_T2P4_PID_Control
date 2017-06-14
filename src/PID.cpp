@@ -3,9 +3,6 @@
 #include <cmath>
 using namespace std;
 
-/*
-* TODO: Complete the PID class.
-*/
 
 PID::PID() {}
 
@@ -46,6 +43,5 @@ void PID::UpdateError(double cte) {
   
 }
 
-double PID::TotalError() {
-}
+
 

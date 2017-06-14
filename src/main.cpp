@@ -1,5 +1,6 @@
 #include <uWS/uWS.h>
 #include <iostream>
+#include <fstream>
 #include "json.hpp"
 #include "PID.h"
 #include <math.h>
@@ -36,7 +37,9 @@ int main()
   
   //Initialize the pid variable.
   pid.Init(0.09, 1.3, 0.003);
-
+  
+  
+  
   h.onMessage([&pid](uWS::WebSocket<uWS::SERVER> ws, char *data, size_t length, uWS::OpCode opCode) {
     // "42" at the start of the message means there's a websocket message event.
     // The 4 signifies a websocket message
@@ -70,7 +73,13 @@ int main()
             throttle = -0.07;
           }
           //pid.set(0.09 , 1.5 + 0.01*speed, 0.0001);
-            
+          
+          // Write CTE to file
+          //std::ofstream CTEfile;
+          //CTEfile.open ("CTE_0.09_1.3_0.003.csv", std::ios::out | std::ios::app);
+          //CTEfile << cte << std::endl;
+          //CTEfile.close();
+          
           // DEBUG
           std::cout << "CTE: " << cte << " Steering Value: " << steer_value << std::endl;
 
