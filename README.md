@@ -25,13 +25,21 @@ Self-Driving Car Engineer Nanodegree Program
 4. Run it: `./pid`. 
 
 ## The effect of PID components
+The value of K<sub>p</sub>, K<sub>i</sub>, and K<sub>d</sub> was chosen by manually tuning. The tuning process is similar to twiddle but mixed with the human intelligence :D
 
+The effect of the PID component is demonstrated by the following examples.
 
-### K<sub>p</sub> = 0, K<sub>i</sub> = 0, K<sub>d</sub> = 0
+### K<sub>p</sub>=0, K<sub>d</sub>=0, K<sub>i</sub>=0
+When all the coefficients are zeros, the CTE increased indefinitely.
 ![][image1]
 
+### K<sub>p</sub>=0.09, K<sub>d</sub>=0, K<sub>i</sub>=0
+As we increased K<sub>p</sub>, the CTE initially decreased. However, the car overshot the ideal trajectory and started to oscillate
 ![][image2]
 
+### K<sub>p</sub>=0.09, K<sub>d</sub>=1.3, K<sub>i</sub>=0
+ We also increased K<sub>d</sub>, and 
 ![][image3]
 
+### K<sub>p</sub>=0.09, K<sub>d</sub>=1.3, K<sub>i</sub>=0.003
 ![][image4]
