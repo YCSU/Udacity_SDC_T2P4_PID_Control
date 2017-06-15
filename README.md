@@ -31,16 +31,20 @@ The effect of the PID component is demonstrated by the following examples. The c
 
 ### K<sub>p</sub>=0, K<sub>d</sub>=0, K<sub>i</sub>=0
 When all the coefficients are zeros, the CTE increased indefinitely.
+
 ![][image1]
 
 ### K<sub>p</sub>=0.09, K<sub>d</sub>=0, K<sub>i</sub>=0
-As we increased K<sub>p</sub>, the CTE initially decreased. However, the car overshot the ideal trajectory and started to oscillate
+As we increased K<sub>p</sub>, the CTE initially decreased. However, the car overshot the ideal trajectory and started to oscillate.
+
 ![][image2]
 
 ### K<sub>p</sub>=0.09, K<sub>d</sub>=1.3, K<sub>i</sub>=0
  We also increased K<sub>d</sub>. The car was able to stay on the track. Notice that there is a spike.
+ 
 ![][image3]
 
 ### K<sub>p</sub>=0.09, K<sub>d</sub>=1.3, K<sub>i</sub>=0.003
-We also increased K<sub>i</sub>. The CTE becamce a bit smoother. There is no steady state error in this case. However, if there was, I component would help correct this error
+We also increased K<sub>i</sub>. the amplitude of oscillation increased a bit. There is no steady state error in this case. However, if there was,  K<sub>i</sub> component would help correct this error.
+
 ![][image4]
