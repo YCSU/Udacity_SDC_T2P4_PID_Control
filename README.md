@@ -1,6 +1,13 @@
 # CarND-Controls-PID
 Self-Driving Car Engineer Nanodegree Program
 
+[//]: # (Image References)
+[image1]: ./img/CTE_0_0_0.png
+[image2]: ./img/CTE_0.09_0_0.png
+[image3]: ./img/CTE_0.09_1.3_0.png
+[image4]: ./img/CTE_0.09_1.3_0.003.png
+
+
 ---
 
 ## Dependencies
@@ -17,4 +24,14 @@ Self-Driving Car Engineer Nanodegree Program
 3. Compile: `cmake .. && make`
 4. Run it: `./pid`. 
 
-## PID characteristic
+## The effect of PID components
+
+
+### K_p = 0, K_i = 0, K_d = 0
+![][image1]
+
+![][image2]
+
+![][image3]
+
+![][image4]
