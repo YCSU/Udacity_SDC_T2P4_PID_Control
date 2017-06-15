@@ -36,10 +36,10 @@ double PID::steer(){
 void PID::UpdateError(double cte) {
   this->p_error = cte;
   
-  this->i_error = cte - this->prev_cte;
+  this->d_error = cte - this->prev_cte;
   this->prev_cte = cte;
   
-  this->d_error += cte;
+  this->i_error += cte;
   
 }
 

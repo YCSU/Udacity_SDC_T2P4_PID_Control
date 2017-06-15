@@ -36,7 +36,7 @@ int main()
   PID pid;
   
   //Initialize the pid variable.
-  pid.Init(0.09, 1.3, 0.003);
+  pid.Init(0.09, 0.003, 1.3);
   
   
   
@@ -65,8 +65,6 @@ int main()
           */
           pid.UpdateError(cte);
           steer_value = pid.steer();
-          
-          
           
           throttle = 1.0 - 0.5 * fabs(steer_value);
           if(fabs(cte) >= 0.8 && speed > 40) {
