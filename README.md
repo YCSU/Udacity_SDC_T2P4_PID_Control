@@ -27,7 +27,7 @@ Self-Driving Car Engineer Nanodegree Program
 ## The effect of PID components
 
 
-### K_p = 0, K_i = 0, K_d = 0
+### K<sub>p</sub> = 0, K<sub>i</sub> = 0, K<sub>d</sub> = 0
 ![][image1]
 
 ![][image2]
